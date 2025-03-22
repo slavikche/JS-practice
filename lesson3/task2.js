@@ -1,5 +1,5 @@
-const age = 24;
-console.log(age);
+let age = Math.floor(Math.random() * (30 - 10) +10);
 
-const isAdult = (age >= 18);
-console.log(isAdult);
+let isAdult = (age >= 18);
+console.log("Age:", age);
+console.log("Is adult?:", isAdult);
