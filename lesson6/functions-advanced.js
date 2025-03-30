@@ -83,15 +83,54 @@ console.log(counter2());
 console.log(counter2());
 */
 
-function multiplier(factor) {
-    return function (number) {
-        return factor * number;
+// function multiplier(factor) {
+//     return function (number) {
+//         return factor * number;
+//     }
+// }
+
+// const double = multiplier(2);
+// const triple = multiplier(3);
+
+// console.log(double(10));
+
+// console.log(triple(5));
+
+/* function countToTen(startValue) {
+    for (let i = startValue; i <= 10; i++) {
+        console.log(i);
     }
 }
+countToTen(4);
+*/
 
-const double = multiplier(2);
-const triple = multiplier(3);
+/*
+function countToTenREcursion(startValue) {
+    if (startValue <= 10) {
+        console.log(startValue);
+        //startValue++;
+        //countToTenREcursion(startValue);
 
-console.log(double(10));
+        countToTenREcursion(++startValue)
+    }
+}
+countToTenREcursion(2);
+*/
 
-console.log(triple(5));
+/*function greet() {
+    console.log(`Hi, ${this.name}`);
+}
+
+const user1 = {name: 'Ivan'};
+const user2 = {name: 'Tomas'};
+
+greet.call(user1);
+*/
+
+function calculateNumbers(num1 = 100, num2 =2) {
+    console.log(num1);
+    console.log(num2);
+    return num1 * num2;
+}
+console.log(calculateNumbers(undefined, 200));
+//console.log(calculateNumbers(200));
