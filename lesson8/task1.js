@@ -44,6 +44,6 @@ const calculator = {
   console.log("Last result:", calculator.lastResult);
   console.log("Operations count:", calculator.operationsCount);
   
-  calculator.reset();
-  console.log(calculator.lastResult);
-  console.log(calculator.operationsCount);
+  // calculator.reset();
+  // console.log(calculator.lastResult);
+  // console.log(calculator.operationsCount);
